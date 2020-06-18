@@ -1,0 +1,19 @@
+ds= {'1':10,'2':20,'3':30,'4':10,'5':40}
+
+result={}
+print 'original dictonary is :\n',ds
+for key,value in ds.items():
+	if value not in result.values():
+		result[key]=value
+print('\nAfter Removing duplicate values')
+print(result)
+
+
+OUTPUT:
+ ace@ace-ThinkCentre-M70e  ~  cd Desktop
+ ace@ace-ThinkCentre-M70e  ~/Desktop  python exp3c.py
+original dictonary is :
+{'1': 10, '3': 30, '2': 20, '5': 40, '4': 10}
+
+After Removing duplicate values
+{'1': 10, '3': 30, '2': 20, '5': 40}
